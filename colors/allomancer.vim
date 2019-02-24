@@ -1,8 +1,8 @@
 " Vim allomancer colors file
 " Code file inspired by:
-" - https://github.com/patstockwell/vim-monokai-tasty 
+" - https://github.com/patstockwell/vim-monokai-tasty
 " - https://github.com/romainl/Apprentice
-" 
+"
 "Author: Nadim Edde <nadimeg@gmail.com>
 "TODO: Get consistency with colors and tokens
 
@@ -38,13 +38,15 @@ let s:white = {"cterm": "NONE", "gui": "#d6e9ff"}
 
 let s:light_red = {"cterm": "1", "gui": "#e06c75"}
 let s:dark_red = {"cterm": "9", "gui": "#af5f5f"}
-let s:orange = {"cterm": "11", "gui": "#FF875F"} 
+let s:orange = {"cterm": "11", "gui": "#FF875F"}
 let s:green = {"cterm": "2", "gui": "#87af87"}
 let s:aqua = {"cterm": "6", "gui": "#5fafaf"}
+let s:light_blue = {"cterm": "4", "gui": "#9dafc3"}
 let s:blue = {"cterm": "4", "gui": "#6E88A6"}
-let s:purple = {"cterm": "5", "gui": "#D18EC2"} 
+let s:dark_blue = {"cterm": "4", "gui": "#4c627c"}
+let s:purple = {"cterm": "5", "gui": "#D18EC2"}
 let s:dark_purple = {"cterm": "13", "gui": "#875faf"} "Xterm color palette 97
-let s:beige = {"cterm": "3", "gui": "#D7AFAF"} 
+let s:beige = {"cterm": "3", "gui": "#D7AFAF"}
 
 "Special text properties
 let s:none = { "cterm": "NONE", "gui": "NONE" }
@@ -53,7 +55,7 @@ let s:bold = { "cterm": "bold", "gui": "bold" }
 let s:underline = { "cterm": "underline", "gui": "underline" }
 let s:bold_underline = { "cterm": "bold,underline", "gui": "bold,underline" }
 
-" Helper function to highlight a group 
+" Helper function to highlight a group
 function! Highlight(group, fg, bg, style)
   exec "hi " . a:group
         \ . " ctermfg=" . a:fg["cterm"]
@@ -114,12 +116,12 @@ call Highlight("MoreMsg", s:grey, s:black, s:none)
 call Highlight("ModeMsg", s:black, s:green, s:none)
 call Highlight("Question", s:green, s:black, s:none)
 
-call Highlight("TabLine", s:blue, s:dark_grey, s:underline)
-call Highlight("TabLineSel", s:black, s:blue, s:bold)
-call Highlight("TabLineFill", s:dark_grey, s:dark_grey, s:none)
+call Highlight("TabLine", s:light_grey, s:dark_grey, s:underline)
+call Highlight("TabLineSel", s:white, s:blue, s:bold)
+call Highlight("TabLineFill", s:none, s:none, s:underline)
 
-call Highlight("StatusLine", s:black, s:blue, s:none)
-call Highlight("StatusLineNC", s:black, s:grey, s:none)
+call Highlight("StatusLine", s:white, s:blue, s:none)
+call Highlight("StatusLineNC", s:light_grey, s:grey, s:none)
 call Highlight("StatusLineTerm", s:black, s:blue, s:none)
 call Highlight("StatusLineTermNC", s:black, s:grey, s:none)
 
@@ -130,7 +132,7 @@ call Highlight("IncSearch", s:black, s:dark_red, s:bold_underline)
 call Highlight("Search", s:black, s:aqua, s:bold_underline)
 
 
-call Highlight("Comment", s:grey, s:none, s:none)
+call Highlight("Comment", s:dark_blue, s:none, s:none)
 call Highlight("Constant", s:orange, s:black, s:none)
 call Highlight("Identifier", s:blue, s:black, s:none)
 call Highlight("Function", s:beige, s:black, s:none)
