@@ -112,7 +112,7 @@ call Highlight("SpellRare", s:orange, s:black, s:none)
 call Highlight("SpellCap", s:aqua, s:black, s:italic)
 call Highlight("SpellLocal", s:green, s:black, s:italic)
 
-call Highlight("MoreMsg", s:grey, s:black, s:none)
+call Highlight("MoreMsg", s:black, s:light_grey, s:none)
 call Highlight("ModeMsg", s:black, s:green, s:none)
 call Highlight("Question", s:green, s:black, s:none)
 
@@ -171,6 +171,9 @@ call Highlight("NERDTreeUp", s:blue, s:black, s:none)
 "netrw
 call Highlight("netrwDir", s:blue, s:black, s:none)
 
+"indent
+call Highlight("IndentGuidesOdd", s:black, s:dark_grey, s:underline)
+call Highlight("IndentGuidesEven", s:dark_blue, s:none, s:underline)
 
 let links = [
             \ ['Boolean', 'Constant'],
