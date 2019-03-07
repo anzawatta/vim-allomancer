@@ -160,8 +160,10 @@ call Highlight("markdownHeadingDelimiter", s:orange, s:black, s:bold)
 call Highlight("markdownLinkText", s:blue, s:black, s:none)
 
 "Startify
-call Highlight("StartifyPath", s:grey, s:black, s:none)
-call Highlight("StartifyFile", s:light_grey, s:black, s:none)
+call Highlight("StartifyBracket", s:light_grey, s:black, s:none)
+call Highlight("StartifyPath", s:light_grey, s:black, s:none)
+call Highlight("StartifyFile", s:aqua, s:black, s:none)
+call Highlight("StartifySpecial", s:light_grey, s:black, s:none)
 call Highlight("StartifyHeader", s:green, s:black, s:none)
 
 "NERDTree
