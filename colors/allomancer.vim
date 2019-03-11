@@ -177,6 +177,9 @@ call Highlight("netrwDir", s:blue, s:black, s:none)
 call Highlight("IndentGuidesOdd", s:black, s:dark_grey, s:underline)
 call Highlight("IndentGuidesEven", s:dark_blue, s:none, s:underline)
 
+"ale
+call Highlight("ALEWarning", s:white, s:dark_red, s:none)
+
 let links = [
             \ ['Boolean', 'Constant'],
             \ ['Character', 'Constant'],
