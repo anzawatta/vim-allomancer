@@ -132,7 +132,7 @@ call Highlight("IncSearch", s:black, s:dark_red, s:bold_underline)
 call Highlight("Search", s:black, s:aqua, s:bold_underline)
 
 
-call Highlight("Comment", s:dark_blue, s:none, s:none)
+call Highlight("Comment", s:light_grey, s:dark_blue, s:none)
 call Highlight("Constant", s:orange, s:black, s:none)
 call Highlight("Identifier", s:blue, s:black, s:none)
 call Highlight("Function", s:beige, s:black, s:none)
@@ -179,6 +179,8 @@ call Highlight("IndentGuidesEven", s:dark_blue, s:none, s:underline)
 
 "ale
 call Highlight("ALEWarning", s:white, s:dark_red, s:none)
+call Highlight("ALEErrorSign", s:white, s:dark_red, s:none)
+call Highlight("ALEWarningSign", s:white, s:dark_red, s:none)
 
 let links = [
             \ ['Boolean', 'Constant'],
