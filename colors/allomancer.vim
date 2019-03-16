@@ -182,6 +182,12 @@ call Highlight("ALEWarning", s:white, s:dark_red, s:none)
 call Highlight("ALEErrorSign", s:white, s:dark_red, s:none)
 call Highlight("ALEWarningSign", s:white, s:dark_red, s:none)
 
+"gitgutter
+call Highlight("GitGutterAdd", s:white, s:green, s:bold)
+call Highlight("GitGutterChange", s:white, s:dark_purple, s:bold)
+call Highlight("GitGutterDelete", s:white, s:dark_red, s:bold)
+call Highlight("GitGutterChangeDelete", s:white, s:orange, s:bold)
+
 let links = [
             \ ['Boolean', 'Constant'],
             \ ['Character', 'Constant'],
