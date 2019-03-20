@@ -70,9 +70,9 @@ endfunction
 call Highlight("Normal", s:light_grey, s:black, s:none)
 call Highlight("Visual", s:blue, s:black, s:reverse)
 
-call Highlight("Cursor", s:black, s:light_grey, s:none)
-call Highlight("CursorLine", s:none, s:light_black, s:none)
-call Highlight("CursorColumn", s:none, s:light_black, s:none)
+call Highlight("Cursor", s:light_grey, s:light_grey, s:none)
+call Highlight("CursorLine", s:none, s:none, s:none)
+call Highlight("CursorColumn", s:none, s:none, s:none)
 call Highlight("CursorLineNr", s:aqua, s:light_black, s:none)
 call Highlight("ColorColumn", s:none, s:none, s:none)
 call Highlight("Conceal", s:none, s:none, s:none)
@@ -98,7 +98,6 @@ call Highlight("DiffDelete", s:dark_red, s:black, s:reverse)
 call Highlight("DiffAdd", s:green, s:black, s:reverse)
 
 " Git Gutter
-
 call Highlight("GitGutterAdd", s:green, s:black, s:none)
 call Highlight("GitGutterChange", s:dark_purple, s:black, s:none)
 call Highlight("GitGutterDelete", s:dark_red, s:black, s:none)
