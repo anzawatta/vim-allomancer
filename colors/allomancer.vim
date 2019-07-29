@@ -187,6 +187,23 @@ call Highlight("GitGutterChange", s:white, s:dark_purple, s:bold)
 call Highlight("GitGutterDelete", s:white, s:dark_red, s:bold)
 call Highlight("GitGutterChangeDelete", s:white, s:orange, s:bold)
 
+"rst
+call Highlight("rstDirective", s:light_red, s:none, s:bold)
+call Highlight("rstSections", s:aqua, s:none, s:none)
+call Highlight("rstStrongEmphasis", s:orange, s:none, s:bold)
+call Highlight("rstInlineLiteral", s:blue, s:none, s:none)
+
+call Highlight("rstHyperlinkReference", s:dark_purple, s:none, s:none)
+call Highlight("rstStandaloneHyperlink", s:dark_purple, s:none, s:none)
+call Highlight("rstInterpretedTextOrHyperlinkReference", s:purple, s:none, s:none)
+call Highlight("rstHyperlinkTarget", s:purple, s:none, s:none)
+
+call Highlight("rstTableLines", s:green, s:none, s:bold)
+
+
+
+
+
 let links = [
             \ ['Boolean', 'Constant'],
             \ ['Character', 'Constant'],
